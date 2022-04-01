@@ -115,13 +115,38 @@ nav {
       }
       .submenu {
         display: none;
+
         @media only screen and (min-width: 1050px) {
           position: absolute;
           top: 140px;
-          width: 25%;
+          width: 75%;
           flex-direction: column;
         }
+        .desktop-arrow-wrapper {
+          @media only screen and (min-width: 1050px) {
+            display: flex;
+            align-items: center;
+            position: relative;
+            .desktop-arrow {
+              position: absolute;
+              left: -50px;
+            }
+            .accent {
+              color: $accent;
+            }
+          }
+        }
         .submenu-item {
+          @media only screen and (min-width: 1050px) {
+            width: 100%;
+            border-bottom: 1px solid #e9eef2;
+            padding: 1rem 0;
+            font-size: 1.2rem;
+            font-weight: bold;
+          }
+        }
+        .no-border {
+          border: none;
         }
       }
     }
@@ -195,6 +220,17 @@ nav {
   img {
     margin-right: 1rem;
   }
+}
+
+hr {
+  display: none;
+  position: absolute;
+  top: 22rem;
+  // height: 100px;
+  min-width: 100vw;
+  border: 0;
+  border-top: 1px solid #e9eef2;
+  // border-top: 1px solid red;
 }
 
 .search-bar {

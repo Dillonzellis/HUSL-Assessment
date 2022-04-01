@@ -217,25 +217,30 @@ nav {
   }
 
   @media only screen and (min-width: 1050px) {
-    margin-top: 75px;
+    margin-top: 110px;
+    margin-left: 20%;
   }
   .input-wrapper {
     display: flex;
 
-    // border-bottom: 1px solid #e9eef2;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #e9eef2;
+    // border-bottom: 1px solid red;
     width: 70%;
+    position: relative;
 
     input {
-      height: 2rem;
       font-size: 18px;
       font-family: "PT Sans", sans-serif;
       font-weight: bold;
       width: 100%;
       border: none;
+      line-height: 3rem;
 
       &::placeholder {
         color: black;
+      }
+      &:focus {
+        outline-color: $accent;
       }
     }
     button {

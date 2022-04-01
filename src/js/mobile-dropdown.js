@@ -6,7 +6,6 @@ const mobileDropdown = () => {
   accent.addEventListener("click", () => {
     dropDown.classList.toggle("show-block");
     searchBar.classList.remove("show-flex");
-    console.log("mobile dropdown");
   });
 };
 

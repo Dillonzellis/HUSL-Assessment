@@ -20,6 +20,7 @@ const navSlide = () => {
       }
     });
 
+    // burger search bar logic
     if (searchBar.classList.contains("show-flex")) {
       searchBar.classList.toggle("show-flex");
     }

@@ -2,7 +2,7 @@ const navSlide = () => {
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".nav-links");
   const navLinks = document.querySelectorAll(".nav-links li");
-
+  const mobileSearch = document.querySelector(".mobile-search");
 
   burger.addEventListener("click", () => {
     //Toggle Nav
@@ -19,10 +19,19 @@ const navSlide = () => {
       }
     });
 
-    // show nav links
-
     //Burger animation
     burger.classList.toggle("toggle");
+  });
+
+  // search bar burger logic
+  mobileSearch.addEventListener("click", () => {
+    if (nav.classList.contains("nav-active")) {
+      navLinks.forEach((link, index) => {
+        link.style.animation = "";
+      });
+      nav.classList.remove("nav-active");
+      burger.classList.toggle("toggle");
+    }
   });
 };
 

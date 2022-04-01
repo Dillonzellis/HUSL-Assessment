@@ -3,6 +3,10 @@
   transform: translateX(0);
 }
 
+.nav-remove {
+  transform: scaleX(-100);
+}
+
 @keyframes navLinkFade {
   from {
     opacity: 0;
@@ -22,8 +26,4 @@
 }
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
-}
-
-.hide {
-  display: none;
 }

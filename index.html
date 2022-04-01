@@ -10,67 +10,81 @@
       href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
       rel="stylesheet"
     />
+    <!-- <link rel="stylesheet" href="./src/styles/style-css.css" /> -->
     <title>HUSL Assessment</title>
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <nav id="navbar">
-          <div class="logo">
-            <img src="./src/img/placeholder-logo.png" alt="" srcset="" />
-          </div>
-          <ul class="nav-links">
-            <li class="nav-link">
-              <div class="arrow-wrapper">
-                <div class="mobile-arrow">
-                  <img src="./src/img/arrow.png" alt="" srcset="" />
-                </div>
-                <a
-                  class="active"
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Industries</a
-                >
+    <header>
+      <nav id="navbar">
+        <div class="logo">
+          <img src="./src/img/placeholder-logo.png" alt="" srcset="" />
+        </div>
+        <ul class="nav-links">
+          <li class="nav-link">
+            <div class="arrow-wrapper">
+              <div class="mobile-arrow">
+                <img src="./src/img/arrow.png" alt="" srcset="" />
               </div>
-            </li>
-            <li class="nav-link">
-              <a href="#" target="_blank" rel="noopener noreferrer"
-                >Solutions</a
+              <a class="accent" href="#" rel="noopener noreferrer"
+                >Industries</a
               >
-            </li>
-            <li class="nav-link">
-              <a href="#" target="_blank" rel="noopener noreferrer"
-                >Enterprise Class AI</a
-              >
-            </li>
-            <li class="nav-link">
-              <a href="#" target="_blank" rel="noopener noreferrer"
-                >Knowledge Center</a
-              >
-            </li>
-            <li class="nav-link">
-              <a href="#" target="_blank" rel="noopener noreferrer">Company</a>
-            </li>
-            <li class="nav-link search">
-              <img src="./src/img/search.png" alt="" srcset="" />
-            </li>
-            <li class="nav-link btn">
-              <a href="#" target="_blank" rel="noopener noreferrer"
-                >REQUEST A DEMO</a
-              >
-            </li>
-          </ul>
+              <div class="submenu">
+                <div class="submenu-item">Financial Services</div>
+                <div class="submenu-item">Healthcare</div>
+                <div class="submenu-item">Government</div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-link">
+            <a href="#" rel="noopener noreferrer">Solutions</a>
+          </li>
+          <li class="nav-link">
+            <a href="#" rel="noopener noreferrer">Enterprise Class AI</a>
+          </li>
+          <li class="nav-link">
+            <a href="#" rel="noopener noreferrer">Knowledge Center</a>
+          </li>
+          <li class="nav-link">
+            <a href="#" rel="noopener noreferrer">Company</a>
+          </li>
+          <li class="nav-link search">
+            <img src="./src/img/search.png" alt="" srcset="" />
+          </li>
+          <li class="nav-link">
+            <a href="" class="btn">REQUEST A DEMO</a>
+          </li>
+        </ul>
+
+        <div class="mobile-search-burger-wrapper">
+          <div class="mobile-search">
+            <img
+              class="m-search-icon"
+              src="./src/img/search.png"
+              alt=""
+              srcset=""
+            />
+          </div>
 
           <div class="burger">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
           </div>
-        </nav>
-      </header>
-    </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <form action="" class="search-bar">
+        <div class="input-wrapper">
+          <input type="text" placeholder="Search" />
+          <button type="submit">
+            <img src="./src/img/close.png" alt="" srcset="" />
+          </button>
+        </div>
+      </form>
+    </main>
 
     <script src="./public/bundle.js"></script>
+    <!-- <script src="./src/js/app.js"></script> -->
   </body>
 </html>

@@ -39,7 +39,7 @@ nav {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 50%;
+      // width: 50%;
       //   transform: translateX(-100%);
       transition: transform 0.3s ease-in;
     }
@@ -119,9 +119,10 @@ nav {
         @media only screen and (min-width: 1050px) {
           position: absolute;
           top: 140px;
-          width: 75%;
+          width: 70vw;
           flex-direction: column;
         }
+
         .desktop-arrow-wrapper {
           @media only screen and (min-width: 1050px) {
             display: flex;
@@ -136,6 +137,7 @@ nav {
             }
           }
         }
+
         .submenu-item {
           @media only screen and (min-width: 1050px) {
             width: 100%;
@@ -143,6 +145,10 @@ nav {
             padding: 1rem 0;
             font-size: 1.2rem;
             font-weight: bold;
+          }
+
+          @media only screen and (max-width: 1050px) {
+            margin-left: 5rem;
           }
         }
         .no-border {
@@ -239,19 +245,9 @@ hr {
   align-items: center;
 
   @media only screen and (max-width: 1050px) {
-    .search-bar {
-      display: none;
-      margin-top: 75px;
-      .input-wrapper {
-        // width: 70%;
-
-        input {
-          // width: 100%;
-        }
-        button {
-        }
-      }
-    }
+    display: none;
+    margin-top: 5.8rem;
+    margin-left: 1.5rem;
   }
 
   @media only screen and (min-width: 1050px) {
@@ -265,6 +261,9 @@ hr {
     // border-bottom: 1px solid red;
     width: 70%;
     position: relative;
+    @media only screen and (max-width: 1050px) {
+      min-width: 90%;
+    }
 
     input {
       font-size: 18px;
@@ -305,3 +304,7 @@ hr {
 .hide {
   display: none !important;
 }
+
+// .left-arrow {
+//   display: none;
+// }

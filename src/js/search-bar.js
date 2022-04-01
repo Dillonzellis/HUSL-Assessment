@@ -7,7 +7,12 @@ const searchBarDisplay = () => {
   searchIcon.addEventListener("click", () => {
     searchBar.classList.toggle("show-flex");
     subMenu.classList.remove("show-block");
-    hr.classList.remove("show-block");
+    if (width >= 1050) {
+      hr.classList.toggle("show-block");
+    }
+    // hr.classList.remove("show-block");
+    console.log(window.innerWidth);
+    console.log("searchbardisplay");
   });
 };
 

@@ -573,6 +573,7 @@ const navSlide = () => {
   const nav = document.querySelector(".nav-links");
   const navLinks = document.querySelectorAll(".nav-links li");
   const mobileSearch = document.querySelector(".mobile-search");
+  const searchBar = document.querySelector(".search-bar");
 
   burger.addEventListener("click", () => {
     //Toggle Nav
@@ -588,6 +589,10 @@ const navSlide = () => {
         }s`;
       }
     });
+
+    if (searchBar.classList.contains("show-flex")) {
+      searchBar.classList.toggle("show-flex");
+    }
 
     //Burger animation
     burger.classList.toggle("toggle");

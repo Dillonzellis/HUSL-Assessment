@@ -548,9 +548,11 @@ module.exports = styleTagTransform;
 const mobileDropdown = () => {
   const accent = document.querySelector(".accent");
   const dropDown = document.querySelector(".submenu");
+  const searchBar = document.querySelector(".search-bar");
 
   accent.addEventListener("click", () => {
     dropDown.classList.toggle("show-block");
+    searchBar.classList.remove("show-flex");
     console.log("mobile dropdown");
   });
 };
@@ -608,10 +610,11 @@ navSlide();
 const mobileSearchBarDisplay = () => {
   const mobileSearch = document.querySelector(".mobile-search");
   const searchBar = document.querySelector(".search-bar");
+  
 
   mobileSearch.addEventListener("click", () => {
     searchBar.classList.toggle("show-mobile-search");
-    console.log(" mobile searchbar");
+    // console.log(" mobile searchbar");
   });
 };
 
@@ -634,7 +637,7 @@ const searchBarDisplay = () => {
   searchIcon.addEventListener("click", () => {
     searchBar.classList.toggle("show-flex");
     subMenu.classList.remove("show-block");
-    console.log("searchbar");
+    // console.log("searchbar");
   });
 };
 
